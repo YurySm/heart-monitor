@@ -1,0 +1,30 @@
+.adventages {
+    padding: 70px 0 78px 0;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 65px;
+    }
+    &__item {
+        max-width: 247px;
+        h3 {
+            margin-top: 38px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #0d0d0d;
+        }
+
+    }
+    &__desckr {
+        font-size: 14px;
+        font-weight: 300;
+        color: #0d0d0d;
+        margin-top: 26px;
+        span {
+            text-decoration: underline;
+            color: #ff0000;
+        }
+    }
+
+}
