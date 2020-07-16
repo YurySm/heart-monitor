@@ -1,6 +1,8 @@
 @media (max-width: 991px) {
+    .container{
+        max-width: 95%;
+    }
     .promo{
-        min-height: 500px;
         padding: 15px 0 23px 0;
         &__wrapper{
             padding-top: 40px;
@@ -58,10 +60,8 @@
 }
 
 @media (max-width: 768px) {
-    .container{
-        width: 90%;
-        margin: 0 auto;
-    }
+
+
     .header{
         display: flex;
         justify-content: space-between;
@@ -157,14 +157,55 @@
     //         height: 45px;
     //     }
     // }
+    .carousel{
+        padding-bottom: 20px;
+        &__inner {
+            width: 90vw;
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+    .catalog {
+        padding-bottom: 20px;
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 180px;
+            height: 40px;
+            line-height: 38px;
+            font-size: 15px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+        &-item {
+            width: 270px;
+        }
+    }
+    .reviews {
+        &__title {
+            margin-top: 10px;
+        }
+        &__items {
+            margin-top: 20px;
+        }
+        &__item {
+            padding-bottom: 30px;  
+            img {
+                width: 120px;
+                height: 120px;
+                margin-right: 50px;
+            }
+        }
+    }
     
 
 
 @media (max-width: 575px) {
-    .container{
-        max-width: 95%;
-        margin: 0 auto;
-    }
+
     .header{
         display: flex;
         flex-direction: column;
@@ -241,12 +282,61 @@
             font-size: 11px;
         }  
     }
+    .catalog {
+        padding-bottom: 20px;
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 160px;
+            height: 40px;
+            line-height: 38px;
+            font-size: 12px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+        &-item {
+            width: 270px;
+            margin: 0 auto 20px auto;
+            min-height: 400px;
+            padding: 10px 10px 16px 10px;
+            &__img {
+                height: 170px;
+            }
+            &__subtitle {
+                margin-top: 10px;
+                font-size: 15px; 
+            }
+        }
+    }
+    .reviews {
+        &__item {
+            padding-bottom: 30px;  
+            img {
+                width: 110px;
+                height: 110px;
+                margin-right: 20px;
+            }
+        }
+        &__name {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 13px;
+            font-weight: 300;
+            color: #0d0d0d;
+            span {
+                display: block;
+                margin: 5px 0 5px 0;
+                font-size: 11px;
+    
+            }
+        }
+    }
 }
 @media (max-width: 420px){
-    .container{
-        max-width: 390px;
-        margin: 0 auto;
-    }
+
     .header{
         display: flex;
         flex-direction: column;
@@ -387,6 +477,14 @@
         margin-top: 20px;
         input{
             height: 35px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 35px;
+            line-height: 33px;
+            font-size: 11px;
         }
     }
 }
